@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
-\ProvidesPackage{zh_CN-Adobefonts_internal}[2015/05/25 zh_CN-Adobefonts_internal Package]
+\ProvidesPackage{zh_CN-fonts}[2015/05/25 zh_CN-fonts Package]
 
 \RequirePackage{xeCJK}
 
@@ -8,19 +8,19 @@
 % vim:ft=tex
 
 \setCJKmainfont[
-BoldFont=Adobe Heiti Std,
-ItalicFont=Adobe Kaiti Std,
-SmallCapsFont=Adobe Heiti Std
-]{Adobe Song Std}
-\setCJKsansfont{Adobe Heiti Std}
-\setCJKmonofont{Adobe Fangsong Std}
+BoldFont=STHeiti,
+ItalicFont=STKaiti,
+SmallCapsFont=FZXIJINLJW--GB1-0
+]{STSong}
+\setCJKsansfont{STHeiti}
+\setCJKmonofont{STFangsong}
 
-\setCJKfamilyfont{zhsong}{Adobe Song Std}
-\setCJKfamilyfont{zhhei}{Adobe Heiti Std}
-\setCJKfamilyfont{zhfs}{Adobe Fangsong Std}
-\setCJKfamilyfont{zhkai}{Adobe Kaiti Std}
-\setCJKfamilyfont{zhli}{LiSu}
-\setCJKfamilyfont{zhyou}{YouYuan}
+\setCJKfamilyfont{zhsong}{STSong}
+\setCJKfamilyfont{zhhei}{STHeiti}
+\setCJKfamilyfont{zhfs}{STFangsong}
+\setCJKfamilyfont{zhkai}{STKaiti}
+\setCJKfamilyfont{zhli}{Weibei-SC-Bold}
+\setCJKfamilyfont{zhyou}{STYuanti-SC-Regular}
 
 \newcommand*{\songti}{\CJKfamily{zhsong}} % 宋体
 \newcommand*{\heiti}{\CJKfamily{zhhei}}   % 黑体
