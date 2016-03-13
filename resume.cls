@@ -36,8 +36,8 @@
 
 \RequirePackage{titlesec}
 \RequirePackage{enumitem}
-\setlist{noitemsep} % removes spacing from items but leaves space around the whole list
-%\setlist{nosep} % removes all vertical spacing within and around the list
+%\setlist{noitemsep} % removes spacing from items but leaves space around the whole list
+\setlist{nosep} % removes all vertical spacing within and around the list
 \setlist[itemize]{topsep=0.25em, leftmargin=1.5pc}
 \setlist[enumerate]{topsep=0.25em, leftmargin=1.5pc}
 \RequirePackage[super]{nth}
@@ -71,16 +71,18 @@
   \vspace{1.25ex}
 }
 
+% \contactInfo{Email}{Phone}{Github}
 \newcommand{\contactInfo}[3]{
   \centerline{\sffamily\large{\faEnvelope\ {#1} \textperiodcentered\ \faPhone\ {#2}}
     \ifthenelse{\isempty{#3}}%
       { } % if {#3} is empty
-      {\textperiodcentered\ \faLink\ {#3} } % homepage, no space before \text...
+      {\textperiodcentered\ \faGithub\ {#3} } % Github page, no space before \text...
   }
-  \vspace{1.5ex}
+  \vspace{1ex}
 }
 
+% \role{Title}{Advisor}
 \newcommand{\role}[2]{
   {\par \textit{#1} ~ #2 \par}
-  \vspace{0.85ex}
+  %\vspace{0.85ex}
 }
