@@ -16,14 +16,14 @@
 \RequirePackage{fontspec}
 % Main document font
 \setmainfont[
-  Path = fonts/Main/ ,
-  Extension = .otf ,
-  UprightFont = *-regular ,
-  BoldFont = *-bold ,
-  ItalicFont = *-italic ,
-  BoldItalicFont = *-bolditalic ,
-  SmallCapsFont = Fontin-SmallCaps
-]{texgyretermes}
+  % Path = fonts/Main/ ,
+  % Extension = .otf ,
+  UprightFont = *-Roman ,
+  BoldFont = Helvetica-Bold ,
+  ItalicFont = *-Italic ,
+  BoldItalicFont = *-BoldItalic ,
+  SmallCapsFont = BodoniSvtyTwoSCITCTT-Book
+]{Palatino}
 
 \RequirePackage[
 	a4paper,
