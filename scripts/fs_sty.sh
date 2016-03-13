@@ -1,19 +1,30 @@
 #!/bin/sh
 
-script_root=$(dirname $0)
+set -e
+
+# URL of Font-Awesome repository on Github
+FONTAWESOME_URL='https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master'
+FONTAWESOME_CSS="$FONTAWESOME_URL/css/font-awesome.css"
+FONTAWESOME_TTF="$FONTAWESOME_URL/fonts/fontawesome-webfont.ttf"
+
+echo 'Downloading Font-Awesome...'
+curl -O $FONTAWESOME_CSS -O $FONTAWESOME_TTF
+
+# Local path
+script_root="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 resume_root=$(dirname "${script_root}")
-temp_root='/tmp/fs_script'
-fs_src="${temp_root}/fontawesome"
 
-[ -r "$fs_src" ] && $(rm -rf "$fs_src")
-mkdir -p $fs_src
+echo 'Brewing fontawesome.sty...'
+cp "${script_root}/fontawesome_preamble.sty" "${script_root}/fontawesome.sty"
+python "${script_root}/fs_sty.py" 'font-awesome.css'
+cat "${script_root}/fontawesome_tail.sty" >> "${script_root}/fontawesome.sty"
 
-cp "$script_root/fs_sty.py" "$temp_root"
-cp "$script_root/fontawesome_preamble.sty" "$temp_root/fontawesome.sty"
+echo 'Moving output files...'
+[ -f "${resume_root}/fontawesome.sty" ] && $(rm "${resume_root}/fontawesome.sty")
+[ -r "${resume_root}/fonts" ] && $(rm -rf "${resume_root}/fonts")
+mkdir -p "${resume_root}/fonts"
+mv fontawesome-webfont.ttf "${resume_root}/fonts/"
+mv fontawesome.sty "${resume_root}"
 
-git clone -b v4.5.0 --depth 1 https://github.com/FortAwesome/Font-Awesome.git $fs_src
-cp "${fs_src}/css/font-awesome.css" "${temp_root}/fontawesome.css"
-cp "${fs_src}/fonts/fontawesome-webfont.ttf" "${resume_root}/fonts/fontawesome-webfont.ttf"
-python "${temp_root}/fs_sty.py" "${temp_root}/fontawesome.css"
-cp "${temp_root}/fontawesome.sty" "${resume_root}"
-cat "${resume_root}/scripts/fontawesome_tail.sty" >> "${resume_root}/fontawesome.sty"
+echo 'Removing font-awesome.css'
+rm font-awesome.css
