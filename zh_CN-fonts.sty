@@ -4,21 +4,20 @@
 \RequirePackage{xeCJK}
 
 % https://github.com/boathit/CTEX/blob/master/texmf/tex/latex/ctex/fontset/ctex-xecjk-adobefonts.def
-% ctex-xecjk-adobefonts.def: Adobe 的 xeCJK 字体设置，为 Adobe 的四套字体
 % vim:ft=tex
 
 \setCJKmainfont[
-BoldFont=STHeiti,
+BoldFont=STXihei,
 ItalicFont=STKaiti,
 SmallCapsFont=FZXIJINLJW--GB1-0
 ]{STSong}
-\setCJKsansfont{STHeiti}
+\setCJKsansfont[BoldFont=STHeiti]{STXihei}
 \setCJKmonofont{STFangsong}
 
-\setCJKfamilyfont{zhsong}{STSong}
-\setCJKfamilyfont{zhhei}{STHeiti}
-\setCJKfamilyfont{zhfs}{STFangsong}
-\setCJKfamilyfont{zhkai}{STKaiti}
+\setCJKfamilyfont{zhsong}{STSong} % 华文宋体
+\setCJKfamilyfont{zhhei}{STHeiti} % 华文黑体
+\setCJKfamilyfont{zhfs}{STFangsong}  % 华文仿宋
+\setCJKfamilyfont{zhkai}{STKaiti}  % 华文楷体
 \setCJKfamilyfont{zhli}{Weibei-SC-Bold}
 \setCJKfamilyfont{zhyou}{STYuanti-SC-Regular}
 

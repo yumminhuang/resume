@@ -1,4 +1,14 @@
-# Curriculum-Vitae
-This Repository is the latex code of my CV
+Resume
+===
 
-The current version of the CV is a 2 pages pdf including Education, Programming Skills, Experience & Research, Selected Curriculum Design, Honor & Awards and Miscellaneous. 
+The LaTeX resume is based on [lewisKit/Curriculum-Vitae](https://github.com/lewisKit/Curriculum-Vitae).
+
+
+
+## CHANGES
+
+1. OS X compatible: using OS X built-in fonts[^1];
+2. Simplify `fs_sty.sh`;
+3. Some tweaks, like icons, contact info, etc.
+
+[^1]: Compiled by Tex Live 2015 on Mac OS X El Capitan.

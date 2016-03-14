@@ -19,7 +19,7 @@
   % Path = fonts/Main/ ,
   % Extension = .otf ,
   UprightFont = *-Roman ,
-  BoldFont = Helvetica-Bold ,
+  BoldFont = HelveticaNeue ,
   ItalicFont = *-Italic ,
   BoldItalicFont = *-BoldItalic ,
   SmallCapsFont = BodoniSvtyTwoSCITCTT-Book
@@ -40,6 +40,7 @@
 \setlist{nosep} % removes all vertical spacing within and around the list
 \setlist[itemize]{topsep=0.25em, leftmargin=1.5pc}
 \setlist[enumerate]{topsep=0.25em, leftmargin=1.5pc}
+\renewcommand{\labelitemii}{\scriptsize$\circ$}
 \RequirePackage[super]{nth}
 
 \titleformat{\section}         % Customise the \section command
