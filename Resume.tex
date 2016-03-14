@@ -1,0 +1,153 @@
+\documentclass{newresume}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Yaming Huang}
+{\href{mailto:yumminhuang@gmail.com}{yumminhuang@gmail.com}}
+{1234567890}
+{\href{https://github.com/yumminhuang}{yumminhuang}}
+{10 Summer St.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Academic Experience}
+
+\begin{body}
+	\school{\textbf{Northeastern University}, Boston, MA}
+	{Sept. 2013 --- Dec. 2015}
+	{Master of Science in Computer Science}
+	{GPA: 3.875/4.00}
+	\textbf{Projects}
+	\begin{itemize}
+	\item \project{MapReduce Project}{Oct. --- Dec. 2015}
+	\begin{itemize}
+		\item Analyze San Francisco crime incidents and predict crime category by na\"{i}ve bayesian algorithm
+		\item Run Hadoop and Spark programs on AWS EMR
+	\end{itemize}
+
+	\item \project{Computer Networking Projects}{Jan. --- Apr. 2014}
+	\begin{itemize}
+		\item \textit{Raw Sockets} --- Built TCP/IP stack using Python raw sockets
+		\item \textit{Roll Your Own CDN} --- Built a simplified Content Delivery Network using AWS EC2
+	\end{itemize}
+
+	\item \project{Datebase Project}{Sept. --- Dec. 2013}
+	\begin{itemize}
+		\item Built Odata service(RESTful APIs for accessing database) over MySQL using JPA
+	\end{itemize}
+
+	\end{itemize}
+\end{body}
+
+\begin{body}
+	\school{\textbf{Jinan University}, Guangzhou, CHINA}
+	{Sept. 2009 --- July 2013}
+	{Bachelor of Engineering in Software Engineering}
+	{GPA: 84.6/100}
+	\textbf{Thesis}
+	\begin{itemize}
+	\item \textit{Visual Fault Localization Tool for Java Multi-threaded Program}
+	\begin{itemize}
+		\item Dynamic fault-localization tool to locate concurrent faults in multi-threaded Java programs
+		\item Using Soot to analyze Java byte code and instrument Java programs
+	\end{itemize}
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Professional Experience}
+\begin{body}
+	\school{\textbf{BitSight}, Cambridge, MA}
+	{Jan. --- Aug. 2015}
+	{Operation Engineer Co-Op}
+	{}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		%\item Architected and built a Security Updates Management Tool for Ubuntu Cluster using Sensu to report and leveraging Jenkins to build
+		\item Architected and built a Security Updates Management Tool for Ubuntu Cluster based on Sensu Alerts for reporting and leveraging Jenkins to build
+		%\item Contributed to CI automation by grabbing test results from Jenkins builds and posting to BitBucket
+		\item Contributed to CI automation by improving python framework to grab test reporting data from Jenkins Builds and summarize that information as a comment on BitBucket PullRequests
+		\item Added improvements to open source projects (automated-ebs-snapshots, BitBucket API, sensu-plugin, etc)
+		\item Automated workflows for dumping/restoring test minified database based on Jenkins and Fabric
+		\item Implemented and rolled out proof of concepts for logging management(ELK, Logentries, Sumologic)
+		, writing chef code to deploy these solutions, mocking up dashboards and prototyping example searches of high-value queries
+	\end{itemize}
+\end{body}
+
+\begin{body}
+	\school{\textbf{Locately}, Boston, MA}
+	{July --- Aug. 2014}
+	{Back-end Software Engineer Intern}
+	{}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Implemented Auto Scaling on AWS, a feature reducing operations costs by \$3000/year
+		\item Wrote Apache access log monitor in EC2 instances to collect access statistics to AWS CloudWatch
+		\item Rewrote test code allowing parallel testing to speed up API test execution by 17\%
+	\end{itemize}
+\end{body}
+
+\begin{body}
+	\school{\textbf{Aston University}, Birmingham, United Kingdom}
+	{Mar. --- Apr. 2012}
+	{Software Developer Intern}
+	{}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item Developed an Eclipse plug-in called \textit{Scenario Capture} which can automatically
+			  generate JUnit test cases in GUI
+		\item Tested code by JUnit
+	\end{itemize}
+\end{body}
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Technical Skills}
+
+\begin{description}[style=nextline,leftmargin=8em,topsep=1pt]
+  \item[Languages] Python, Java, Ruby, Shell, Racket
+  \item[Tools] Chef, Docker, Git, Jenkins, Jira, SQL, UML
+  \item[Frameworks] Django, Hadoop
+  \item[Methodologies] Agile, Scrum
+\end{description}
+
+%\smallskip
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Publications
+%\header{Selected Publications}
+
+%\begin{body}
+%	Seth Holloway. ``\textbf{Writing Resumes in LaTeX},'' in \emph{Proceedings of the Mind of Seth Holloway}. 2011.\\
+%	\smallskip
+%	Seth Holloway, Andrea Holloway. ``\textbf{Accent Modification Rules},'' in \emph{Proceedings of Fun}. 2008.\\
+%\end{body}
+%
+%\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors
+%\header{AWARDS AND HONORS}
+
+%\begin{body}
+%	\textbf{Third Class University Scholarship}, Jinan University \hfill{} 2011\\
+%	\smallskip
+%	\textbf{Third Class Graduating Student Scholarship},  Jinan University \hfill{} 2013
+%\end{body}
+
+%\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Interests
+%\header{INTERESTS}
+%\begin{body}
+%	Photography, Travel, Soccer
+%\end{body}
+
+\end{document}
