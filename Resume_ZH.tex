@@ -22,9 +22,16 @@
 	{GPA：3.875/4.00}
 	\textbf{课程项目}
 	\begin{itemize}
+	\item \project{软件工程项目}{2015年9月 --- 12月}
+	\begin{itemize}
+		\item 使用 Jersey 和 Tomcat 构建 JAX-RS 网站：WHAM (What Happened Around Me)；
+		\item 根据 Scrum 方法指导项目开发进程；
+		\item 利用 JIRA 进行项目管理和缺陷追踪，Confluence 管理文档。
+	\end{itemize}
+
 	\item \project{MapReduce 项目}{2015年10月 --- 12月}
 	\begin{itemize}
-		\item 分析旧金山市犯罪记录，并使用朴素贝叶斯算法预测一个案件的犯罪类型；
+		\item 统计、分析旧金山市犯罪记录，并使用朴素贝叶斯算法预测一个案件的犯罪类型；
 		\item 在 AWS EMR 上运行 Hadoop 和 Spark 程序。
 	\end{itemize}
 
@@ -36,8 +43,9 @@
 
 	\item \project{数据库项目}{2013年9月 --- 11月}
 	\begin{itemize}
-		\item 使用 JPA 为 MySQL 搭建 OData 服务（一款用来访问数据库的 RESTful API）。
+		\item 使用 JPA 为 MySQL 数据库搭建 OData 服务（一款用来访问数据库的 RESTful API）。
 	\end{itemize}
+
 	\end{itemize}
 
 	\smallskip
@@ -49,8 +57,8 @@
 	\begin{itemize}
 	\item 《可视化的Java多线程程序错误定位工具》
 	\begin{itemize}
-		\item 一个动态的错误定位工具，用来定位 Java 多线程程序当作的并发错误；
-		\item 使用 \emph{Soot} 分析 Java 字节码，进行插装。
+		\item 一个动态的错误定位工具，用来定位 Java 多线程程序当中的并发错误；
+		\item 使用 \textit{Soot} 分析 Java 字节码，进行插装。
 	\end{itemize}
 	\end{itemize}
 \end{body}
@@ -65,9 +73,9 @@
 	{2015年1月 --- 8月}
 	{实习运维工程师}{}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item 为 Ubuntu 集群设计并构建了一套安全更新管理系统：使用 Sensu 报告可安装更新，利用 Jenkins  安装更新；
-		\item 改进公司持续集成框架：从 Jenkins 获取测试结果，将测试结果生成总结报告并发送到 BitBucket 页面；
-		\item 使用 Jenkins 和 Fabric 创建了一个自动化工作流，用来备份和还原测试数据库；
+		\item 为 Ubuntu 集群设计并构建了一套安全更新管理系统：使用 Sensu 报告可安装更新，利用 Jenkins 安装更新；
+		\item 改进公司持续集成框架：从 Jenkins 获取测试结果，将测试结果生成总结报告并发送到 BitBucket Pull Request 页面；
+		\item 使用 Jenkins 和 Fabric 创建了一个自动化工作流，用 Django API 备份和还原测试数据库；
 		\item 改进了一些开源项目（包括 automated-ebs-snapshots, BitBucket API, sensu-plugin 等）；
 		\item 部署并对比几款日志管理系统（ELK, Logentries, Sumologic）使用 Chef 部署，创建控制面板和常用搜索。
 	\end{itemize}
@@ -78,14 +86,15 @@
 	{2014年7月 --- 8月}
 	{实习后端软件工程师}{}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item 实现 AWS 的 \emph{Auto Scaling} 功能，帮助公司节每年省运营成本 \$3000；
+		\item 实现 AWS 的 Auto Scaling 功能，帮助公司节每年省运营成本 \$3000；
 		\item 开发 Apache access log 监视器，将 EC2 实例上收集的数据发送到 AWS CloudWatch，用来监控服务器性能；
 		\item 重写测试代码，使得 API 测试可以并行运行，从而使测试速度提高 17\%。
 	\end{itemize}
 \end{body}
 
 \begin{body}
-	\school{\textbf{Aston University}，伯明翰，英国}{2012年3月 --- 4月}
+	\school{\textbf{Aston University}，伯明翰，英国}
+	{2012年3月 --- 4月}
 	{实习软件开发}{}
 	\begin{itemize}[noitemsep,topsep=0pt]
 		\item 开发了一款名为 \textit{Scenario Capture} 的 Eclipse 插件，可以在图形界面下操作，并自动生成 JUnit 测试代码；
@@ -128,7 +137,6 @@
 %\header{AWARDS AND HONORS}
 
 %\begin{body}
-%	\vspace{14pt}
 %	\textbf{Third Class University Scholarship}, Jinan University \hfill{} 2011\\
 %	\smallskip
 %	\textbf{Third Class Graduating Student Scholarship},  Jinan University \hfill{} 2013
@@ -138,10 +146,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Interests
-%\header{INTERESTS}
-%\begin{body}
-%	\vspace{14pt}
-%	Photography, Travel, Soccer
-%\end{body}
+\header{兴趣爱好}
+\begin{body}
+	摄影，旅行，足球
+\end{body}
 
 \end{document}
