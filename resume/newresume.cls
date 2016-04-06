@@ -5,7 +5,7 @@
 % use xifthen
 \RequirePackage{xifthen}
 % use fontawesome
-\RequirePackage{fontawesome}
+\RequirePackage{../fontawesome}
 % use hyperref
 \RequirePackage[colorlinks,linkcolor=blue,anchorcolor=blue,citecolor=green,urlcolor=blue]{hyperref}
 

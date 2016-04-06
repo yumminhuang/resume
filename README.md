@@ -1,6 +1,8 @@
 Resume
 ===
 
+[![Build Status](https://travis-ci.org/yumminhuang/Resume.svg?branch=master)](https://travis-ci.org/yumminhuang/Resume)
+
 The LaTeX resume is based on [lewisKit/Curriculum-Vitae](https://github.com/lewisKit/Curriculum-Vitae).
 
 

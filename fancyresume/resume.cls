@@ -9,21 +9,21 @@
 % use xifthen
 \RequirePackage{xifthen}
 % use fontawesome
-\RequirePackage{fontawesome}
+\RequirePackage{../fontawesome}
 % use xcolor for customizing color
 %\RequirePackage[usenames,dvipsnames]{xcolor}
 % loading fonts
 \RequirePackage{fontspec}
 % Main document font
-\setmainfont[
+%\setmainfont[
   % Path = fonts/Main/ ,
   % Extension = .otf ,
-  UprightFont = *-Roman ,
-  BoldFont = HelveticaNeue ,
-  ItalicFont = *-Italic ,
-  BoldItalicFont = *-BoldItalic ,
-  SmallCapsFont = BodoniSvtyTwoSCITCTT-Book
-]{Palatino}
+  %UprightFont = *-Roman ,
+  %BoldFont = HelveticaNeue ,
+  %ItalicFont = *-Italic ,
+  %BoldItalicFont = *-BoldItalic ,
+  %SmallCapsFont = BodoniSvtyTwoSCITCTT-Book
+%]{Palatino}
 
 \RequirePackage[
 	a4paper,
