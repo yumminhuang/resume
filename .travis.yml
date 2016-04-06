@@ -4,6 +4,7 @@ before_install:
 - sudo apt-get update
 - sudo apt-get -y --no-install-recommends install texlive-full
 - sudo tex -v
+- sudo tlmgr update --all
 - sudo wget -P /usr/share/fonts/opentype/ https://github.com/SivilTaram/BUAAOS-guide-book/raw/master/guide-book/fonts/AdobeFangsongStd-Regular.otf
 - sudo wget -P /usr/share/fonts/opentype/ "https://github.com/SivilTaram/BUAAOS-guide-book/raw/master/guide-book/fonts/AdobeHeitiStd-Regular%20(v5.010).otf"
 - sudo wget -P /usr/share/fonts/opentype/ "https://github.com/SivilTaram/BUAAOS-guide-book/raw/master/guide-book/fonts/AdobeKaitiStd-Regular%20(v5.010).otf"
