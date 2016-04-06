@@ -27,4 +27,4 @@ deploy:
     - Resume_ZH.pdf
   skip_cleanup: true
   on:
-    repo: yumminhuang/resume
+    tags: true
