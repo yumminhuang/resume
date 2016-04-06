@@ -1,14 +1,16 @@
 \documentclass{newresume}
-\usepackage[UTF8, heading = false, scheme = plain]{ctex}
+% Build in MacTeX
+% \usepackage[UTF8, heading = false, scheme = plain]{ctex}
+% \setCJKmainfont[
+% BoldFont=STSongti-SC-Bold,
+% ItalicFont=STKaiti,
+% SmallCapsFont=STHeiti
+% ]{STSong}
+% \setCJKsansfont[BoldFont=STHeiti]{STXihei}
+% \setCJKmonofont{STFangsong}
 
-\setCJKmainfont[
-Path = ../fonts/ ,
-BoldFont=FZHei,
-ItalicFont=FZKai,
-SmallCapsFont=FZFangsong
-]{FZShuSong}
-\setCJKsansfont{FZHei}
-\setCJKmonofont{FZFangsong}
+% Build in Travis-CI environment
+\usepackage[UTF8,adobefonts]{ctex}
 
 \begin{document}
 

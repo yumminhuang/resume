@@ -7,23 +7,25 @@
 % vim:ft=tex
 
 \setCJKmainfont[
-Path = ../fonts/,
-Extension = .ttf,
-BoldFont=FZHei,
-ItalicFont=FZKai,
-SmallCapsFont=FZHei
-]{FZShuSong}
-\setCJKsansfont{FZHei}
-\setCJKmonofont{FZFangsong}
+BoldFont=STXihei,
+ItalicFont=STKaiti,
+SmallCapsFont=STSongti-SC-Bold
+]{STSong}
+\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+\setCJKmonofont{STFangsong}
 
-\setCJKfamilyfont{zhsong}{FZShuSong} % 方正书宋
-\setCJKfamilyfont{zhhei}{FZHei} % 方正黑体
-\setCJKfamilyfont{zhfs}{FZFangsong}  % 方正仿宋
-\setCJKfamilyfont{zhkai}{FZKai}  % 方正楷体
+\setCJKfamilyfont{zhsong}{STSong} % 华文宋体
+\setCJKfamilyfont{zhhei}{STHeiti} % 华文黑体
+\setCJKfamilyfont{zhfs}{STFangsong}  % 华文仿宋
+\setCJKfamilyfont{zhkai}{STKaiti}  % 华文楷体
+\setCJKfamilyfont{zhli}{Weibei-SC-Bold}
+\setCJKfamilyfont{zhyou}{STYuanti-SC-Regular}
 
 \newcommand*{\songti}{\CJKfamily{zhsong}} % 宋体
 \newcommand*{\heiti}{\CJKfamily{zhhei}}   % 黑体
 \newcommand*{\kaishu}{\CJKfamily{zhkai}}  % 楷书
 \newcommand*{\fangsong}{\CJKfamily{zhfs}} % 仿宋
+\newcommand*{\lishu}{\CJKfamily{zhli}}    % 隶书
+\newcommand*{\youyuan}{\CJKfamily{zhyou}} % 幼圆
 
 \endinput
