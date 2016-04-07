@@ -1,6 +1,6 @@
 branches:
   only:
-    - /^v*$/
+    - /^v[\d.]+\d$/
 sudo: required
 dist: trusty
 before_install:
