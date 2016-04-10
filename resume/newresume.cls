@@ -71,17 +71,19 @@
 	\end{changemargin}
 }
 
-% \contact{Name}{Email}{Phone}{Github}{Address}
-\newcommand{\contact}[5]{
+% \contact{Name}{Email}{Phone}{Github}{Linkedin}{Address}
+\newcommand{\contact}[6]{
 	\begin{changemargin}{-0.5in}{-0.5in}
 		\begin{center}
 			{\Large\scshape{#1}}\\ \smallskip
-			\faEnvelope\ {#2}
+			\small
+			\faEnvelopeO\ {#2}
 			\textperiodcentered\ \faPhone\ {#3}
-			\textperiodcentered\ \faGithub\ {#4}\\ \smallskip
-			\ifthenelse{\isempty{#5}}%
-				{ } % if {5} is empty
-				{\faHome\ {#5}\\ \smallskip } % Address
+			\textperiodcentered\ \faGithub\ {#4}
+			\textperiodcentered\ \faLinkedinSquare\ {#5}\\ \smallskip
+			\ifthenelse{\isempty{#6}}%
+				{ } % if {6} is empty
+				{\faHome\ {#6}\\ \smallskip } % Address
 		\end{center}
 	\end{changemargin}
 }
