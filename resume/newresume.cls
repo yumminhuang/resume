@@ -76,7 +76,6 @@
 	\begin{changemargin}{-0.5in}{-0.5in}
 		\begin{center}
 			{\Large\scshape{#1}}\\ \smallskip
-			\small
 			\faEnvelopeO\ {#2}
 			\textperiodcentered\ \faPhone\ {#3}
 			\textperiodcentered\ \faGithub\ {#4}
