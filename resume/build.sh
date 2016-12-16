@@ -15,11 +15,9 @@ apt-get install -y --no-install-recommends \
     wget \
     xzdec
 
-# intsall latex packages
-tlmgr init-usertree
-tlmgr install ulem
-
 cd resume/
+# intsall latex packages
+wget http://ctan.mackichan.com/macros/plain/contrib/misc/ulem.sty
 # run xelatex
 xelatex Resume.tex -interaction=nonstopmode
 xelatex Resume_ZH.tex -interaction=nonstopmode
