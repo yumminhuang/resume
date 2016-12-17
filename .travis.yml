@@ -11,8 +11,8 @@ script:
   - docker run --rm -v $(pwd)/resume:/resume ubuntu:xenial bash /resume/build.sh
 
 before_deploy:
+  - sudo chown -R travis:travis resume/
   - find . -exec ls -l {} \;
-  - sudo chown -R 777 resume/
 
 deploy:
   provider: releases
