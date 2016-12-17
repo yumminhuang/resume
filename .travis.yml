@@ -10,6 +10,10 @@ services:
 script:
   - docker run --rm -v $(pwd)/resume:/resume ubuntu:xenial bash /resume/build.sh
 
+before_deploy:
+  - find . -exec ls -l {} \;
+  - sudo chown -R 777 resume/
+
 deploy:
   provider: releases
   api_key:
