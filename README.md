@@ -1,7 +1,7 @@
 Resume
 ===
 
-[![Build Status](https://travis-ci.org/yumminhuang/resume.svg?branch=master)](https://travis-ci.org/yumminhuang/resume)
+[![Build Status](https://travis-ci.org/yumminhuang/resume.svg)](https://travis-ci.org/yumminhuang/resume)
 
 My LaTeX resumes. Find the latest resumes in PDF format at [Release Page](https://github.com/yumminhuang/resume/releases/latest).
 
