@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{newresume}[2015/05/25 An elegant Résumé class]
-\LoadClass[10pt]{article}
+\LoadClass[10pt, a4paper]{article}
 
 % use xifthen
 \RequirePackage{xifthen}
@@ -23,7 +23,7 @@
 							% box containing running head.
 
 % DIMENSION OF TEXT:
-\textheight 9.25in			% Height of text (including footnotes and figures,
+\textheight 10.25in			% Height of text (including footnotes and figures,
 							% excluding running head and foot).
 \textwidth 6.05in			% Width of text line.
 
