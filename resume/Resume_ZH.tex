@@ -32,9 +32,9 @@
 	{2016年7月 --- 至今}
 	{DevOps 运维开发工程师}{}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item 管理分布式 Gerrit 集群，托管近 1TB 代码库，为约 1500 名研发人员提供代码托管服务；
-		\item 搭建包括 ELK 框架在内的实时数据分析平台，收集 Gerrit、Jenkins 集群数据，提供数据分析和决策支持；
-		\item 编写 Gerrit 集群 Ansible Playbook，实现自动化 Gerrit 部署、配置更新。
+		\item 管理分布式 Gerrit 集群，托管近 1TB 代码库，为全球约 1500 名研发人员提供代码托管服务；
+		\item 搭建包括ELK、Superset 在内的实时数据分析平台，收集Gerrit 集群、研发虚拟机集群、代码编译等数据，用于提供数据分析和决策支持；
+		\item 编写 Gerrit 集群的 Ansible Playbook，实现自动化 Gerrit 部署、配置更新。
 	\end{itemize}
 \end{body}
 
@@ -43,8 +43,8 @@
 	{2015年1月 --- 8月}
 	{全职实习运维工程师}{}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item 为 Ubuntu 集群设计并构建了一套安全补丁管理系统：使用 Sensu 报告可安装补丁，利用 Jenkins 一键安装补丁；
-		\item 改进公司持续集成框架：从 Jenkins 获取测试结果，将测试结果生成总结报告并发送到 BitBucket Pull Request 页面；
+		\item 为 AWS 上百台 Ubuntu 集群设计并构建了一套安全补丁管理系统：使用 Sensu 报告可安装补丁，利用 Jenkins 一键安装补丁；
+		\item 改进公司持续集成框架：从Jenkins获取测试结果，将测试结果生成报告并发送到BitBucket Pull Request页面；
 		\item 使用 Jenkins 和 Fabric 调用 Django API，创建了一个自动化工作流备份和还原 MySQL 测试数据库；
 		\item 改进了一些开源项目（包括 automated-ebs-snapshots，BitBucket-api，sensu-community-plugins 等）；
 		\item 部署并对比几款日志管理系统（ELK, Logentries, Sumologic）使用 Chef 部署，创建控制面板和常用搜索。
@@ -58,19 +58,19 @@
 	\begin{itemize}[noitemsep,topsep=0pt]
 		\item 实现 AWS 的 Auto Scaling 功能，根据 CPU 使用率动态增减服务器，帮助公司每年节省运营成本 \$3000；
 		\item 开发 Apache access log 监视器，将 EC2 实例上收集的数据发送到 AWS CloudWatch，用来监控服务器性能；
-		\item 重写测试代码，使得 API 测试可以并行运行，从而使测试速度提高 17\%。
+		\item 重写 Django App 测试代码，使得 API 测试可以并行运行，从而使测试速度提高 17\%。
 	\end{itemize}
 \end{body}
 
-\begin{body}
-	\school{\textbf{Aston University}，伯明翰，英国}
-	{2012年3月 --- 4月}
-	{实习软件开发}{}
-	\begin{itemize}[noitemsep,topsep=0pt]
-		\item 开发了一款名为 \textit{Scenario Capture} 的 Eclipse 插件，可以在图形界面下操作，并自动生成 JUnit 测试代码；
-		\item 使用 JUnit 测试代码。
-	\end{itemize}
-\end{body}
+%\begin{body}
+%	\school{\textbf{Aston University}，伯明翰，英国}
+%	{2012年3月 --- 4月}
+%	{实习软件开发}{}
+%	\begin{itemize}[noitemsep,topsep=0pt]
+%		\item 开发了一款名为 \textit{Scenario Capture} 的 Eclipse 插件，可以在图形界面下操作，并自动生成 JUnit 测试代码；
+%		\item 使用 JUnit 测试代码。
+%	\end{itemize}
+%\end{body}
 \smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -87,8 +87,8 @@
 	\item \project{软件工程项目}{2015年9月 --- 12月}
 	\begin{itemize}
 		\item 使用 Jersey 和 Tomcat 构建 JAX-RS 网站：WHAM (What Happened Around Me)；
-		\item 根据 Scrum 方法指导项目开发进程；
-		\item 利用 JIRA 进行项目管理和缺陷追踪，Confluence 管理文档。
+		\item 使用 Jenkins 搭建持续交付工作流；
+		\item 根据 Scrum 方法指导项目开发进程，使用 JIRA 进行项目管理和缺陷追踪，Confluence 管理文档。
 	\end{itemize}
 
 	\item \project{MapReduce 项目}{2015年10月 --- 12月}
@@ -119,8 +119,8 @@
 	\begin{itemize}
 	\item 《可视化的Java多线程程序错误定位工具》
 	\begin{itemize}
-		\item 一个动态的错误定位工具，用来定位 Java 多线程程序当中的并发错误；
-		\item 使用 \textit{Soot} 分析 Java 字节码，进行插装。
+		\item 实现一个动态错误定位工具，用来定位 Java 多线程程序当中的并发错误；
+		\item 使用 \textit{Soot} 分析 Java 字节码，进行插装；SWT 制作图形用户界面。
 	\end{itemize}
 	\end{itemize}
 \end{body}
@@ -131,10 +131,10 @@
 % Skills
 \header{专业技能}
 
-\begin{description}[style=nextline,leftmargin=3em,topsep=1pt]
+\begin{description}[style=nextline,topsep=1pt]
 	\item[语言] Python, Java, Ruby, Shell, Racket
-	\item[工具] Ansible, Chef, Docker, Git, Gerrit, Jenkins, Jira, SQL, Superset
-	\item[框架] Elastic Stack, Django, Hadoop
+	\item[工具] Ansible, Chef, Docker, Git, Gerrit, Jenkins, Jira, MySQL, Postgres, Superset
+	\item[框架] AWS, Elastic Stack, Django, Hadoop
 	\item[方法] Agile, Scrum
 \end{description}
 

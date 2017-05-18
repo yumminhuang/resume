@@ -18,12 +18,12 @@
 \begin{body}
 	\school{\textbf{LeEco Zhixin}, Beijing, China}
 	{Jul. 2016 --- Present}
-	{IT Operations Engineer}
+	{DevOps Engineer}
 	{}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item Managed the distributed Gerrit cluster, which hosts about 1TB codebase, for providing service to over 1500 developers
-		\item Established a real-time data analysis platform that collecting logs from Jenkins and Gerrit cluster, and provide log analysis and decision support
-		\item Developed an Ansible playbook for Gerrit cluster, implementing automation of Gerrit deployment
+		\item Managed the distributed Gerrit cluster, which hosts about 1TB codebase, for providing the code host service to over 1500 developers around the world
+		\item Established a real-time data analysis platform that collecting data from Jenkins build and Gerrit cluster to provide data analysis and decision support
+		\item Developed an Ansible playbook for Gerrit cluster, implementing automated deployment and configuration
 	\end{itemize}
 \end{body}
 
@@ -37,7 +37,7 @@
 		\item Contributed to CI automation by improving python framework to grab test reporting data from Jenkins Builds and summarize that information as a comment on BitBucket PullRequests
 		\item Added improvements to open source projects (automated-ebs-snapshots, BitBucket-api, sensu-plugin, etc)
 		\item Automated workflows for dumping/restoring test minified database based on Jenkins and Fabric
-		\item Implemented and rolled out proof of concepts for logging management(ELK, Logentries, Sumologic)
+		\item Implemented and rolled out proof of concepts for logging management(ELK, Logentries, Sumologic), writing chef code to deploy these solutions, mocking up dashboards and prototyping example searches of high-value queries
 	\end{itemize}
 \end{body}
 
@@ -53,17 +53,17 @@
 	\end{itemize}
 \end{body}
 
-\begin{body}
-	\school{\textbf{Aston University}, Birmingham, United Kingdom}
-	{Mar. --- Apr. 2012}
-	{Software Developer Intern}
-	{}
-	\begin{itemize}[noitemsep,topsep=0pt]
-		\item Developed an Eclipse plug-in called \textit{Scenario Capture} which can automatically
-			  generate JUnit test cases in GUI
-		\item Tested code by JUnit
-	\end{itemize}
-\end{body}
+%\begin{body}
+%	\school{\textbf{Aston University}, Birmingham, United Kingdom}
+%	{Mar. --- Apr. 2012}
+%	{Software Developer Intern}
+%	{}
+%	\begin{itemize}[noitemsep,topsep=0pt]
+%		\item Developed an Eclipse plug-in called \textit{Scenario Capture} which can automatically
+%			  generate JUnit test cases in GUI
+%		\item Tested code by JUnit
+%	\end{itemize}
+%\end{body}
 \smallskip
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -79,21 +79,21 @@
 	\begin{itemize}
 	\item \project{Managing Software Development Project}{Sept. --- Dec. 2015}
 	\begin{itemize}
-		\item Built a JAX-RS website --- WHAM (What Happened Around Me) using Jersey and Tomcat;
-		\item Managed software development progress by Scrum methodology;
-		\item Used Jira to track issues and Confluence to manage documents.
+		\item Built a JAX-RS website --- WHAM (What Happened Around Me) using Jersey and Tomcat
+		\item Setup a continuous deployment pipeline on Jenkins
+		\item Managed software development progress by Scrum, with using Jira to track issues and Confluence to manage documents
 	\end{itemize}
 
 	\item \project{MapReduce Project}{Oct. --- Dec. 2015}
 	\begin{itemize}
-		\item Analyze San Francisco crime incidents and predict crime category by na\"{i}ve bayesian algorithm
-		\item Run Hadoop and Spark programs on AWS EMR
+		\item Analyzed San Francisco crime incidents and predict crime category by na\"{i}ve bayesian algorithm
+		\item Ran Hadoop and Spark programs on AWS EMR
 	\end{itemize}
 
 	\item \project{Computer Networking Projects}{Jan. --- Apr. 2014}
 	\begin{itemize}
-		\item \textit{Raw Sockets} --- Built TCP/IP stack using Python raw sockets
-		\item \textit{Roll Your Own CDN} --- Built a simplified Content Delivery Network using AWS EC2
+		\item \textit{Raw Sockets} --- Built TCP/IP stack using Python raw socket
+		\item \textit{Roll Your Own CDN} --- Built a simplified Content Delivery Network on AWS EC2
 	\end{itemize}
 
 	\item \project{Datebase Project}{Sept. --- Dec. 2013}
@@ -113,8 +113,8 @@
 	\begin{itemize}
 	\item \textit{Visual Fault Localization Tool for Java Multi-threaded Program}
 	\begin{itemize}
-		\item Dynamic fault-localization tool to locate concurrent faults in multi-threaded Java programs
-		\item Using Soot to analyze Java byte code and instrument Java programs
+		\item Implement a dynamic fault-localization tool to locate concurrent faults in multi-threaded Java programs
+		\item Using Soot to analyze Java byte code and SWT to build a GUI
 	\end{itemize}
 	\end{itemize}
 \end{body}
@@ -127,8 +127,8 @@
 
 \begin{description}[style=nextline,leftmargin=8em,topsep=1pt]
 	\item[Languages] Python, Java, Ruby, Shell, Racket
-	\item[Tools] Ansible, Chef, Docker, Git, Gerrit, Jenkins, Jira, SQL, Superset
-	\item[Frameworks] Elastic Stack, Django, Hadoop
+	\item[Tools] Ansible, Chef, Docker, Git, Gerrit, Jenkins, Jira, MySQL, Postgres, Superset
+	\item[Frameworks] AWS, Elastic Stack, Django, Hadoop
 	\item[Methodologies] Agile, Scrum
 \end{description}
 
