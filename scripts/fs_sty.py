@@ -2,60 +2,46 @@
 
 import os
 import re
-from sys import argv
+import sys
 
-scripts, css = argv
+import jinja2
 
+# Regex Pattern
+ICON_PATTERN = re.compile('^.fa-(.*):before')
+CODE_PATTERN = re.compile('^  content: "(.*)"')
 
-# filter icon name, ignore alias
-def fil_icname(line):
-    if re.search('^\.fa-.*:before {$', line):
-        ic_name = re.split("[.:]", line)[1][3:]
-        return ic_name
+latex_jinja_env = jinja2.Environment(
+    block_start_string='\BLOCK{',
+    block_end_string='}',
+    variable_start_string='\VAR{',
+    variable_end_string='}',
+    comment_start_string='\#{',
+    comment_end_string='}',
+    line_statement_prefix='%%%',
+    line_comment_prefix='%#',
+    trim_blocks=True,
+    autoescape=False,
+    loader=jinja2.FileSystemLoader(os.path.abspath('.')))
 
+template = latex_jinja_env.get_template('fontawesome.sty.j2')
 
-def fil_iccode(line):
-    if re.search('^  content: .*;$', line):
-        ic_code = re.split("[\"]", line)[1][1:].upper()
-        return ic_code
+fs_css = sys.argv[1]
 
+icons_list = list()
 
-# turn icon name to Camel Case
-# forked from https://github.com/schischi-a/fontawesome-latex
-def camel_case(name):
-    ret = name.replace('-', ' ')
-    ret = ret.title()
-    ret = ret.replace(' ', '')
-    return ret
-
-
-def get_icons(fs_css):
+with open(fs_css, 'r') as css:
     icons = []
-    with open(fs_css, 'r') as fs_fp:
-        for line in fs_fp:
-            icon_name = fil_icname(line)
-            if icon_name is not None:
-                line = next(fs_fp)
-                icon_code = fil_iccode(line)
-                if icon_code is not None:
-                    tex_name = camel_case(icon_name)
-                    icons.append((icon_name, icon_code, tex_name))
-    return icons
+    for line in css:
+        match = ICON_PATTERN.search(line)
+        if match:
+            icons.append(match.group(1))
+            continue
+        match = CODE_PATTERN.search(line)
+        if match:
+            code = match.group(1)[1:]
+            for icon in icons:
+                icons_list.append((icon, code.upper(),
+                                   icon.replace('-', ' ').title().replace(' ', '')))
+            icons = []
 
-
-def output_sty(sty, icons):
-    with open(sty, 'a') as f:
-        for ic in icons:
-            prefix = "\expandafter\def\csname faicon@"
-            ic_name_h = prefix + ic[0] + "\endcsname"
-            ic_code_tex = "{\symbol{\"" + ic[1] + "}}  \\def\\fa" + ic[2]
-            ic_name_tail = " {{\FA\csname faicon@" + ic[0] + "\endcsname}}\n"
-            f.write(ic_name_h.ljust(63) + ic_code_tex.ljust(42) + ic_name_tail)
-
-
-if __name__ == "__main__":
-    print("output fontawesome.sty...")
-    icons = get_icons(css)
-    temp_dir = os.path.dirname(css)
-    sty = os.path.join(temp_dir, "fontawesome.sty")
-    output_sty(sty, icons)
+print(template.render(fontawesome=icons_list))

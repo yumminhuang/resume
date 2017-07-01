@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
@@ -15,9 +15,7 @@ script_root="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 resume_root=$(dirname "${script_root}")
 
 echo 'Brewing fontawesome.sty...'
-cp "${script_root}/fontawesome_preamble.sty" "${script_root}/fontawesome.sty"
-python "${script_root}/fs_sty.py" 'font-awesome.css'
-cat "${script_root}/fontawesome_tail.sty" >> "${script_root}/fontawesome.sty"
+python "${script_root}/fs_sty.py" 'font-awesome.css' > "${script_root}/fontawesome.sty"
 
 echo 'Moving output files...'
 [ -f "${resume_root}/fontawesome.sty" ] && $(rm "${resume_root}/fontawesome.sty")

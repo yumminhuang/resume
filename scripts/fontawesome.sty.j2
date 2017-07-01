@@ -37,3 +37,11 @@ SmallCapsFont = *
 \newcommand*{\faicon}[1]{%
   {\FA\csname faicon@#1\endcsname}}
 
+%%% for icon, code, name in fontawesome
+\expandafter\def\csname faicon@\VAR{icon}\endcsname {\symbol{"\VAR{code}}} \def\fa\VAR{name} {{\FA\csname faicon@\VAR{icon}\endcsname}}
+%%% endfor
+
+
+\endinput
+
+%% end of file `fontawesome.sty`.

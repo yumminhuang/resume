@@ -8,7 +8,7 @@ My LaTeX resumes. Find the latest resumes in PDF format at [Release Page](https:
 ## CHANGES
 
 1. Auto-build using [Travis-CI](https://travis-ci.org/yumminhuang/resume) and Docker;
-2. OS X compatible: using OS X built-in fonts[^1];
+2. macOS compatible: using macOS built-in fonts[^1];
 3. Simplify `fs_sty.sh`;
 4. Some tweaks, like icons, contact info, etc.
 
