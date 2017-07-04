@@ -8,7 +8,7 @@ services:
   - docker
 
 script:
-  - docker run --rm -v $(pwd)/resume:/resume ubuntu:xenial bash /resume/build.sh
+  - docker run --rm -v $(pwd)/resume:/resume ubuntu:zesty bash /resume/build.sh
 
 before_deploy:
   - sudo chown -R travis:travis resume/

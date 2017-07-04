@@ -6,11 +6,9 @@
 apt-get update && \
 apt-get install -y --no-install-recommends \
     texlive-latex-extra \
-    texlive-latex-recommended \
-    texlive-fonts-extra \
-    texlive-fonts-recommended \
     texlive-lang-chinese \
     texlive-formats-extra \
+    fonts-font-awesome \
     lmodern \
     wget \
     xzdec
