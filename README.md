@@ -9,10 +9,10 @@ My LaTeX resumes. Find the latest resumes in PDF format at [Release Page](https:
 
 1. Auto-build using [Travis-CI](https://travis-ci.org/yumminhuang/resume) and Docker;
 2. macOS compatible: using macOS built-in fonts[^1];
-3. Simplify `fs_sty.sh`;
-4. Some tweaks, like icons, contact info, etc.
+3. Simplify scripts to generate `fontawesome.sty`;
+4. Some tweaks, including icons, contact info, etc.
 
-[^1]: Compiled by Tex Live 2016 on macOS Sierra.
+[^1]: Compiled by Tex Live 2017 on macOS Sierra.
 
 ## ACKNOWLEDGEMENT
 
