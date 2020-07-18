@@ -9,14 +9,8 @@ apt-get install -y --no-install-recommends \
     texlive-lang-chinese \
     texlive-formats-extra \
     texlive-fonts-recommended \
-    fonts-font-awesome \
-    lmodern \
-    wget \
-    xzdec
+    fonts-font-awesome
 
-cd resume/
-# intsall latex packages
-wget http://mirrors.ctan.org/macros/latex/contrib/ulem/ulem.sty
 # run xelatex
 xelatex Resume.tex -interaction=nonstopmode
 xelatex Resume_ZH.tex -interaction=nonstopmode
