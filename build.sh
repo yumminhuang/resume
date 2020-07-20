@@ -1,15 +1,15 @@
 #!/bin/bash
 
-# THIS SCRIPT IS USED TO AUTO-BUILD ON TRAVIS-CI
+# THIS SCRIPT IS USED TO AUTO-BUILD
 
-# install texlive 2016 and dependencies
+# install texlive 2019 and dependencies
 apt-get update && \
 apt-get install -y --no-install-recommends \
-    texlive-latex-extra \
-    texlive-lang-chinese \
-    texlive-formats-extra \
+    fonts-font-awesome \
     texlive-fonts-recommended \
-    fonts-font-awesome
+    texlive-formats-extra \
+    texlive-lang-chinese \
+    texlive-latex-extra
 
 # run xelatex
 xelatex Resume.tex -interaction=nonstopmode
