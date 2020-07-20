@@ -175,3 +175,6 @@ TSWLatexianTemp*
 
 *.css
 fonts/
+
+# PDF
+*.pdf

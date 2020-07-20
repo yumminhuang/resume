@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{newresume}[2015/05/25 An elegant Résumé class]
+\ProvidesClass{resume}[2015/05/25 An elegant Résumé class]
 \LoadClass[10pt, a4paper]{article}
 
 % use xifthen
@@ -99,6 +99,12 @@
 \newcommand{\school}[4]{
 	#1 \hfill #2\\
 	\textit{#3} \hfill #4\\
+}
+
+%\company{Company}{Location}{Date}{Title}
+\newcommand{\company}[4]{
+	\textbf{#1}\hspace*{1em}#2 \hfill #3\\
+	\textit{#4}\\
 }
 
 %\project{Project}{Date}
