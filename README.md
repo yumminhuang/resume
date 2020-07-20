@@ -1,22 +1,8 @@
 Resume
 ===
 
-[![Build Status](https://travis-ci.org/yumminhuang/resume.svg)](https://travis-ci.org/yumminhuang/resume)
+![Code Lint](https://github.com/yumminhuang/resume/workflows/Code%20Lint/badge.svg)
+![Release Resume PDF](https://github.com/yumminhuang/resume/workflows/Release%20Resume%20PDF/badge.svg)
 
-My LaTeX resumes. Find the latest resumes in PDF format at [Release Page](https://github.com/yumminhuang/resume/releases/latest).
-
-## CHANGES
-
-1. Auto-build using [Travis-CI](https://travis-ci.org/yumminhuang/resume) and Docker;
-2. macOS compatible: using macOS built-in fonts[^1];
-3. Simplify scripts to generate `fontawesome.sty`;
-4. Some tweaks, including icons, contact info, etc.
-
-[^1]: Compiled by Tex Live 2017 on macOS Sierra.
-
-## ACKNOWLEDGEMENT
-
-This repo is inpired by the following projects:
-* [lewisKit/Curriculum-Vitae](https://github.com/lewisKit/Curriculum-Vitae)
-* [harshjv/travis-ci-latex-pdf](https://github.com/harshjv/travis-ci-latex-pdf)
-* [SivilTaram/BUAAOS-guide-book](https://github.com/SivilTaram/BUAAOS-guide-book)
+My resumes in TeX.
+Find the latest resumes in PDF format at [Release Page](https://github.com/yumminhuang/resume/releases/latest).
