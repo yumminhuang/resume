@@ -4,13 +4,13 @@
 \usepackage[UTF8, heading = false, scheme = plain]{ctex}
 
 % Font sets for MacTex on OS X
-% \setCJKmainfont[
-% BoldFont=STSongti-SC-Bold,
-% ItalicFont=STKaiti,
-% SmallCapsFont=STHeiti
-% ]{STSong}
-% \setCJKsansfont[BoldFont=STHeiti]{STXihei}
-% \setCJKmonofont{STFangsong}
+\setCJKmainfont[
+BoldFont=STSongti-SC-Bold,
+ItalicFont=STKaiti,
+SmallCapsFont=STHeiti
+]{STSong}
+\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+\setCJKmonofont{STFangsong}
 
 \begin{document}
 
@@ -25,7 +25,31 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Experience
-\header{职业经历}
+\header{职业经历}\begin{body}
+	\school{\textbf{Thoughtworks}，上海}{2019年9月 --- 至今}
+	{高级咨询师}{}
+%	\textbf{澳大利亚某财务管理软件业务系统} \hfill{2020年2月 --- 2019年12月} \textbf{DevOps Team Lead}
+%	\begin{itemize}[noitemsep,topsep=0pt]
+%		\item 基于 CIS Benchmark 安全规范，修复生产环境在内的X个 AWS 帐户安全漏洞。
+%		\item
+%	\end{itemize}
+	\textbf{新加坡某政府部门业务系统} \hfill{2019年9月 --- 2019年12月} \textbf{DevOps Specialist}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item 在政府私有机房内搭建基于 GoCD 的部署平台，实现自动化部署，同时满足政府严格的安全合规需求。
+		\item 完善系统监控和日志收集，实现对系统内基础设施、微服务和第三方集成的全面监控和日志诊断。
+	\end{itemize}
+	\school{\textbf{Thoughtworks}，北京}{2017年8月 --- 2019年9月}
+	{咨询师}{}
+	\textbf{某国际知名汽车品牌中国区 4S 店移动销售平台} \hfill{} \textbf{DevOps Team Lead}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item 在百人开发团队提供 DevOps 和 SRE 支持，参与包括架构设计、持续交付、上线发布、环境运维、日志监控等工作；
+		\item 在 Azure 平台上运行包括生产、灾备环境在内的五套线上环境，使用 Terraform 管理超过一百台虚拟机和其它 Azure 云服务，期间完成在四个月内完成全部环境的 Azure 跨区域迁移和灾备份环境的搭建；
+		\item 基于微服务架构，先后使用 Rancher/Kubernetes 作为容器编排平台，期间在三个月的时间里，完成包括生产环境在内的四套环境，从 Rancher 到 Kubernetes 的迁移；
+		\item 使用 GoCD，通过 \textit{Pipeline as Code} 方式和 Kubernetes \textit{Elastic Agent} 管理超过 100 条持续交付流水线；
+		\item 先后使用 Ansible, Saltstack 管理线上环境配置，保证五套线上环境的一致性和快速变更；
+		\item 使用 Prometheus 对线上环境进行全面监控，使用 Elasticsearch 处理和存储约 30GB/天的应用服务日志。
+	\end{itemize}
+\end{body}
 
 \begin{body}
 	\company{乐视致新}{北京}
@@ -79,51 +103,47 @@
 \header{教育经历}
 
 \begin{body}
-	\school{\textbf{东北大学}，波士顿，美国}
-	{2013年9月 --- 2016年1月}
-	{计算机科学硕士学位}
-	{GPA：3.88/4.00}
-	\textbf{部分课程项目}
-	\begin{itemize}
-	\item \project{软件工程项目}{2015年9月 --- 12月}
-	\begin{itemize}
-		\item 使用 Jersey 和 Tomcat 构建 JAX-RS 网站：WHAM (What Happened Around Me)；
-		\item 使用 Jenkins 搭建持续交付工作流；
-		\item 根据 Scrum 方法指导项目开发进程，使用 JIRA 进行项目管理和缺陷追踪，Confluence 管理文档。
-	\end{itemize}
+	\school{\textbf{东北大学}，波士顿，美国}{2013年9月 --- 2016年5月}
+	{计算机科学硕士学位}{GPA：3.88/4.00}
+	% \textbf{部分课程项目}
+	% \begin{itemize}
+	% \item \project{软件工程项目}{2015年9月 --- 12月}
+	% \begin{itemize}
+	% 	\item 使用 Jersey 和 Tomcat 构建 JAX-RS 网站：WHAM (What Happened Around Me)；
+	% 	\item 使用 Jenkins 搭建持续交付工作流；
+	% 	\item 根据 Scrum 方法指导项目开发进程，使用 JIRA 进行项目管理和缺陷追踪，Confluence 管理文档。
+	% \end{itemize}
 
-	\item \project{MapReduce 项目}{2015年10月 --- 12月}
-	\begin{itemize}
-		\item 统计、分析旧金山市犯罪记录（超过 180 万条记录），并使用朴素贝叶斯算法预测一个案件的犯罪类型；
-		\item 编写 Hadoop 和 Spark 程序，在 AWS EMR 上运行。
-	\end{itemize}
+	% \item \project{MapReduce 项目}{2015年10月 --- 12月}
+	% \begin{itemize}
+	% 	\item 统计、分析旧金山市犯罪记录（超过 180 万条记录），并使用朴素贝叶斯算法预测一个案件的犯罪类型；
+	% 	\item 编写 Hadoop 和 Spark 程序，在 AWS EMR 上运行。
+	% \end{itemize}
 
-	\item \project{计算机网络项目}{2014年1月 --- 4月}
-	\begin{itemize}
-		\item \textit{Raw Sockets} --- 使用 Python 的 Row Socket 构建 TCP/IP 栈；
-		\item \textit{Roll Your Own CDN} --- 基于 AWS EC2 搭建一个简易的「内容分发网络（CDN）」。
-	\end{itemize}
+	% \item \project{计算机网络项目}{2014年1月 --- 4月}
+	% \begin{itemize}
+	% 	\item \textit{Raw Sockets} --- 使用 Python 的 Row Socket 构建 TCP/IP 栈；
+	% 	\item \textit{Roll Your Own CDN} --- 基于 AWS EC2 搭建一个简易的「内容分发网络（CDN）」。
+	% \end{itemize}
 
-	\item \project{数据库项目}{2013年9月 --- 11月}
-	\begin{itemize}
-		\item 使用 JPA 为 MySQL 数据库搭建 OData 服务（一款用来访问数据库的 RESTful API）。
-	\end{itemize}
+	% \item \project{数据库项目}{2013年9月 --- 11月}
+	% \begin{itemize}
+	% 	\item 使用 JPA 为 MySQL 数据库搭建 OData 服务（一款用来访问数据库的 RESTful API）。
+	% \end{itemize}
 
-	\end{itemize}
+	% \end{itemize}
 
 	\smallskip
-	\school{\textbf{暨南大学}，广州}
-	{2009年9月 --- 2013年7月}
-	{软件工程工学学士学位}
-	{平均分：84.6/100}
-	\textbf{毕业论文}
-	\begin{itemize}
-	\item 《可视化的Java多线程程序错误定位工具》
-	\begin{itemize}
-		\item 实现一个动态错误定位工具，用来定位 Java 多线程程序当中的并发错误；
-		\item 使用 \textit{Soot} 分析 Java 字节码，进行插装；SWT 制作图形用户界面。
-	\end{itemize}
-	\end{itemize}
+	\school{\textbf{暨南大学}，广州}{2009年9月 --- 2013年7月}
+	{软件工程工学学士学位}{平均分：84.6/100}
+	% \textbf{毕业论文}
+	% \begin{itemize}
+	% \item 《可视化的Java多线程程序错误定位工具》
+	% \begin{itemize}
+	% 	\item 实现一个动态错误定位工具，用来定位 Java 多线程程序当中的并发错误；
+	% 	\item 使用 \textit{Soot} 分析 Java 字节码，进行插装；SWT 制作图形用户界面。
+	% \end{itemize}
+	% \end{itemize}
 \end{body}
 
 \smallskip
@@ -134,10 +154,10 @@
 
 \begin{body}
 \begin{description}[style=nextline,leftmargin=8em,topsep=1pt]
-	\item[语言] Python, Java, Ruby, Shell, Racket
-	\item[工具] Ansible, Chef, Docker, Git, Gerrit, Jenkins, Jira, MySQL, Postgres, Superset, Zabbix
-	\item[框架] AWS, Elastic Stack, Django, Hadoop
-	\item[方法] Agile, Scrum
+	\item[语言] Python, Shell, Java, Ruby
+	\item[工具] Ansible, Saltstack, Chef, Docker, Terraform, Git, Gerrit, Jenkins, GoCD, MySQL
+	\item[云服务] Azure, AWS
+	\item[监控] Prometheus, Elastic Stack, Nagios
 \end{description}
 \end{body}
 
@@ -168,6 +188,15 @@
 %	\smallskip
 %	\textbf{Third Class Graduating Student Scholarship},  Jinan University \hfill{} 2013
 %\end{body}
+
+\header{专业认证}
+
+\begin{body}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item AWS Certified Solutions Architect(Associate)
+		\item Certified Kubernetes Administrator
+	\end{itemize}
+\end{body}
 
 %\smallskip
 
