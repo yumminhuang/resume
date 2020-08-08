@@ -4,13 +4,13 @@
 \usepackage[UTF8, heading = false, scheme = plain]{ctex}
 
 % Font sets for MacTex on OS X
-\setCJKmainfont[
-BoldFont=STSongti-SC-Bold,
-ItalicFont=STKaiti,
-SmallCapsFont=STHeiti
-]{STSong}
-\setCJKsansfont[BoldFont=STHeiti]{STXihei}
-\setCJKmonofont{STFangsong}
+% \setCJKmainfont[
+% BoldFont=STSongti-SC-Bold,
+% ItalicFont=STKaiti,
+% SmallCapsFont=STHeiti
+% ]{STSong}
+% \setCJKsansfont[BoldFont=STHeiti]{STXihei}
+% \setCJKmonofont{STFangsong}
 
 \begin{document}
 
@@ -26,28 +26,35 @@ SmallCapsFont=STHeiti
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Experience
 \header{职业经历}\begin{body}
-	\school{\textbf{Thoughtworks}，上海}{2019年9月 --- 至今}
-	{高级咨询师}{}
-%	\textbf{澳大利亚某财务管理软件业务系统} \hfill{2020年2月 --- 2019年12月} \textbf{DevOps Team Lead}
-%	\begin{itemize}[noitemsep,topsep=0pt]
-%		\item 基于 CIS Benchmark 安全规范，修复生产环境在内的X个 AWS 帐户安全漏洞。
-%		\item
-%	\end{itemize}
-	\textbf{新加坡某政府部门业务系统} \hfill{2019年9月 --- 2019年12月} \textbf{DevOps Specialist}
-	\begin{itemize}[noitemsep,topsep=0pt]
-		\item 在政府私有机房内搭建基于 GoCD 的部署平台，实现自动化部署，同时满足政府严格的安全合规需求。
-		\item 完善系统监控和日志收集，实现对系统内基础设施、微服务和第三方集成的全面监控和日志诊断。
+	\company{Thoughtworks}
+	{上海}
+	{2019年9月 --- 至今}
+	{高级咨询师}
+	\begin{itemize}
+		%	\item \project{澳大利亚某公司支付业务系统}{2020年2月 --- 至今} \textbf{DevOps Tech Lead}
+		%	\begin{itemize}[noitemsep,topsep=0pt]
+		%		\item 基于 CIS Benchmark 安全规范，修复生产环境在内的X个 AWS 帐户安全漏洞。
+		%	\end{itemize}
+		\item \project{新加坡某政府部门业务系统}{2019年9月 --- 2019年12月} \textbf{DevOps Specialist}
+		\begin{itemize}[noitemsep,topsep=0pt]
+			\item 在政府私有机房内搭建基于 GoCD 的部署平台，实现自动化部署，同时满足政府严格的安全合规需求。
+			\item 完善系统监控和日志收集，实现对系统内基础设施、微服务和第三方集成的全面监控和日志诊断。
+		\end{itemize}
 	\end{itemize}
-	\school{\textbf{Thoughtworks}，北京}{2017年8月 --- 2019年9月}
-	{咨询师}{}
-	\textbf{某国际知名汽车品牌中国区 4S 店移动销售平台} \hfill{} \textbf{DevOps Team Lead}
-	\begin{itemize}[noitemsep,topsep=0pt]
-		\item 在百人开发团队提供 DevOps 和 SRE 支持，参与包括架构设计、持续交付、上线发布、环境运维、日志监控等工作；
-		\item 在 Azure 平台上运行包括生产、灾备环境在内的五套线上环境，使用 Terraform 管理超过一百台虚拟机和其它 Azure 云服务，期间完成在四个月内完成全部环境的 Azure 跨区域迁移和灾备份环境的搭建；
-		\item 基于微服务架构，先后使用 Rancher/Kubernetes 作为容器编排平台，期间在三个月的时间里，完成包括生产环境在内的四套环境，从 Rancher 到 Kubernetes 的迁移；
-		\item 使用 GoCD，通过 \textit{Pipeline as Code} 方式和 Kubernetes \textit{Elastic Agent} 管理超过 100 条持续交付流水线；
-		\item 先后使用 Ansible, Saltstack 管理线上环境配置，保证五套线上环境的一致性和快速变更；
-		\item 使用 Prometheus 对线上环境进行全面监控，使用 Elasticsearch 处理和存储约 30GB/天的应用服务日志。
+	\company{Thoughtworks}
+	{北京}
+	{2017年8月 --- 2019年9月}
+	{咨询师}
+	\begin{itemize}
+		\item \project{某国际知名汽车品牌中国区 4S 店移动销售平台}{} \textbf{DevOps Tech Lead}
+		\begin{itemize}[noitemsep,topsep=0pt]
+			\item 在百人开发团队提供 DevOps 和 SRE 支持，参与包括架构设计、持续交付、上线发布、环境运维、日志监控等工作；
+			\item 在 Azure 平台上运行包括生产、灾备环境在内的五套线上环境，使用 Terraform 管理超过一百台虚拟机和其它 Azure 云服务，期间完成在四个月内完成全部环境的 Azure 跨区域迁移和灾备份环境的搭建；
+			\item 基于微服务架构，先后使用 Rancher/Kubernetes 作为容器编排平台，期间在三个月的时间里，完成包括生产环境在内的四套环境，从 Rancher 到 Kubernetes 的迁移；
+			\item 使用 GoCD，通过 \textit{Pipeline as Code} 方式和 Kubernetes \textit{Elastic Agent} 管理超过 100 条持续交付流水线；
+			\item 先后使用 Ansible, Saltstack 管理线上环境配置，保证五套线上环境的一致性和快速变更；
+			\item 使用 Prometheus 对线上环境进行全面监控，使用 Elasticsearch 处理和存储约 30GB/天的应用服务日志。
+		\end{itemize}
 	\end{itemize}
 \end{body}
 
@@ -193,7 +200,7 @@ SmallCapsFont=STHeiti
 
 \begin{body}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item AWS Certified Solutions Architect(Associate)
+		\item AWS Certified Solutions Architect(Professional)
 		\item Certified Kubernetes Administrator
 	\end{itemize}
 \end{body}
