@@ -20,31 +20,33 @@
 	{Shanghai, China}
 	{Sept. 2019 --- Now}
 	{Senior Consultant}
-	\begin{itemize}
-		% \item \project{PCI DSS Remediation for Payment Platform}{Feb. 2020 --- Now} \textbf{DevOps Tech Lead}
-		% \begin{itemize}[noitemsep,topsep=0pt]
-		% 	\item Made AWS security uplift to follow CIS benchmarks;
-		% 	\item PCI-DSS complaince for legacy platform.
-		% \end{itemize}
-		\item \project{A welfare system of Singapore GovTech}{Sept. 2019 --- Dec. 2019} \textbf{DevOps Specialist}
+	\begin{itemize}[noitemsep,topsep=0pt]
+		\item \project{Legacy Payment Gateway in Australian}{Feb. 2020 --- Now} \textbf{DevOps Tech Lead}
 		\begin{itemize}[noitemsep,topsep=0pt]
-			\item Set up a continuous deployment pipelines on GoCD, which satisfies strict security compliance;
-			\item Improved monitoring and logging system, which implements logging diagnostics and complete monitoring to infrastructure, micro-services and integrated services.
+			\item Based on PCI standards, identified and fixed security issues in payment gateways, and passed PCI DSS audits.
+			\item Built an automated AWS security scanning tool, based on CIS Benchmark, to repair security issues for 3 AWS accounts.
 		\end{itemize}
+		\item \project{System of Singapore Goverment}{Sept. 2019 --- Dec. 2019} \textbf{DevOps Specialist}
+		\begin{itemize}[noitemsep,topsep=0pt]
+			\item Built a deployment platform based on GoCD in the government's private cloud to achieve automated deployment while meeting the government's strict security compliance.
+			\item Improved monitoring and log collection to achieve comprehensive monitoring and log diagnosis of infrastructure, microservices and 3-party services.
+		\end{itemize}
+		\item Participated in the pre-sales, to provide solution support for car sales, system operation and maintenance, \textit{etc}.
 	\end{itemize}
 	\company{Thoughtworks}
 	{Beijing, China}
 	{Aug. 2017 --- Sept. 2019}
 	{Consultant}
-	\begin{itemize}
+	\begin{itemize}[noitemsep,topsep=0pt]
 		\item \project{Mobile Platform for an Automobile 4S Stores in China Area}{} \textbf{DevOps Tech Lead}
 		\begin{itemize}[noitemsep,topsep=0pt]
-			\item Provided DevOps and SRE support in a $100+$ team, involved works including Cloud architecture design, Continuous Delivery, Monthly release, Environment Operations, Logging and Monitoring, \textit{etc}.
-			\item Operated 5 environments(Production and DR included) on Azure. Used Terraform to manage $100+$ VMs and other Azure services. Completed Azure cross-region migration.
-			\item Managed VM configurations by Ansible and Saltstack to keep consistency between multi-environments;
-			\item Completed container orchestrator migration from Rancher to Kubernetes.
-			\item Managed $120+$ pipelines as \textit{Pipeline as Code} way on GoCD with \textit{Elastic Agent} on Kubernetes cluster.
-			\item Use Prometheus to monitor system, and Elasticsearch to store logs.
+			\item Provided DevOps and SRE support in the $100$-person team, participate in cloud architecture design, infrastructure setup, continuous delivery, monthly release, environmental operation and maintenance, logging and monitoring, \textit{etc}.
+			\item Ran 5 environments(Production and DR included) on Azure. Used Terraform to manage $100+$ VMs and other Azure services. Completed Azure cross-region migration and DR setup.
+			\item Migrated container orchestrator platform from Rancher to Kubernetes for 4 environments within 4 months.
+			\item Leveraged GoCD to manage more than 120 continuous delivery pipelines through \textit{Pipeline as Code} and Kubernetes \textit{Elastic Agent}.
+			\item Used Ansible and Saltstack to manage VM configurations to ensure the consistency and rapid change for the 5 environments.
+			\item Set up Prometheus to monitor infrastructures, micro-services and 3rd-party services.
+			\item Set up Elasticsearch clusters to provide logging diagnostics, which collects and stores 30GB logs per day.
 		\end{itemize}
 	\end{itemize}
 \end{body}
@@ -55,10 +57,10 @@
 	{Jul. 2016 --- Jul. 2017}
 	{DevOps Engineer}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item Managed the distributed Gerrit cluster, which hosts about 1TB codebase, for providing the code host service to over 1500 developers around the world
-		\item Established a real-time data analysis platform that collecting data from Jenkins build and Gerrit cluster to provide data analysis and decision support
+		\item Managed the distributed Gerrit clusters, which hosts about 1TB codebase, for providing the code host service to over 1500 developers around the world
+		\item Established a real-time data analysis platform based on ELK and Superset that collecting data from Jenkins and Gerrit to provide data analysis and decision support
+		\item Developed Ansible playbooks for Gerrit and ELK, implementing automated deployment and configuration
 		\item Built a continuous delivery pipeline for PHP project based on Jenkinsfile
-		\item Developed an Ansible playbook for Gerrit and ELK cluster, implementing automated deployment and configuration
 	\end{itemize}
 \end{body}
 
@@ -163,9 +165,9 @@
 \begin{body}
 \begin{description}[style=nextline,leftmargin=8em,topsep=1pt]
 	\item[Languages] Python, Shell, Java, Ruby
-	\item[Tools] Ansible, Chef, Docker, Git, Gerrit, Jenkins, Jira, MySQL, Postgres, Superset, Zabbix
+	\item[Tools] Ansible, Saltstack, Terraform, Consul, Gerrit, GoCD, Jenkins
 	\item[Cloud] Azure, AWS
-	\item[Monitoring] Prometheus, Elastic Stack, Nagios
+	\item[Monitoring] Prometheus, Elastic Stack, Grafana
 \end{description}
 \end{body}
 
@@ -201,7 +203,7 @@
 
 \begin{body}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item AWS Certified Solutions Architect(Professional)
+		\item AWS Certified Solutions Architect (Professional)
 		\item Certified Kubernetes Administrator
 	\end{itemize}
 \end{body}
