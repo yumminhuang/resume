@@ -107,9 +107,9 @@
 	\textit{#4}\\
 }
 
-%\project{Project}{Date}
-\newcommand{\project}[2]{
-	#1 \hfill #2
+%\project{Project}{Role}{Date}
+\newcommand{\project}[3]{
+	#1 \textperiodcentered\ \textit{#2}\hfill #3
 }
 
 % END RESUME DEFINITIONS
