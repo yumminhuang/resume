@@ -24,43 +24,60 @@
 {}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Introduction
+\header{自我评价}
+
+\begin{body}
+四年 DevOps 和基础设施相关工作经验，曾带领团队负责汽车销售平台、政府系统、支付网关等项目基础设施相关的落地和改进。
+熟悉云服务、微服务的容器化部署、CI/CD、日志监控等DevOps和SRE实践。学习能力强，英文熟练。
+\smallskip
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Experience
-\header{职业经历}\begin{body}
+\header{职业经历}
+
+\begin{body}
 	\company{思特沃克}
 	{上海}
 	{2019年9月 --- 至今}
 	{高级咨询师}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item \project{澳大利亚某财务软件公司支付业务系统}{2020年2月 --- 至今} \textbf{DevOps Tech Lead}
+		\item \project{澳大利亚某财务软件公司支付网关}{DevOps Tech Lead}{2020年2月 --- 至今}
 		\begin{itemize}[noitemsep,topsep=0pt]
+			\item 带领团队赢得客户信任，团队工作内容由初期修复 AWS 基础设施的安全缺陷逐步扩展到负责维护和改进整个支付网关系统，团队规模由初期的3人发展到8人全功能团队。
 			\item 基于 PCI 安全标准，识别并修复支付网关存在的安全缺陷，通过 PCI DSS 审计；
 			\item 搭建自动化 AWS 安全扫描工具，基于 CIS Benchmark，修复包括生产环境在内 3 个帐户的安全缺陷。
 		\end{itemize}
-		\item \project{新加坡某政府部门业务系统}{2019年9月 --- 2019年12月} \textbf{DevOps Specialist}
+		\item \project{新加坡某政府部门业务系统}{DevOps Specialist}{2019年9月 --- 2019年12月}
 		\begin{itemize}[noitemsep,topsep=0pt]
-			\item 在政府私有机房内搭建基于 GoCD 的部署平台，实现自动化部署，同时满足政府严格的安全合规需求；
-			\item 完善系统监控和日志收集，实现对系统内基础设施、微服务和第三方集成的全面监控和日志诊断。
+			\item 设计并搭建基于 GoCD 的部署平台，在满足严格的安全要求的同时，实现在政府私有云内的自动化部署；
+			\item 完善系统监控和日志收集，实现对系统内基础设施、微服务和第三方集成的全面监控和日志诊断；
+			\item 参与系统发布和系统 $7\times 24$ On Call 支持。
 		\end{itemize}
-		\item 参与项目售前工作，提供汽车销售、系统运维等解决方案支持
+		\item 参与多次项目售前支持工作，提供汽车销售、零售系统运维等解决方案
 	\end{itemize}
+
 	\company{思特沃克}
 	{北京}
 	{2017年8月 --- 2019年9月}
 	{咨询师}
 	\begin{itemize}[noitemsep,topsep=0pt]
-		\item \project{某国际知名汽车品牌中国区 4S 店移动销售平台}{} \textbf{DevOps Tech Lead}
+		\item \project{某国际知名汽车品牌中国区 4S 店移动销售平台}{DevOps Tech Lead}{}
 		\begin{itemize}[noitemsep,topsep=0pt]
-			\item 在百人开发团队提供 DevOps 和 SRE 支持，参与架构设计、基础设施搭建和变更、持续交付、上线发布、环境运维、日志监控等工作；
-			\item 在 Azure 平台上运行包括生产、灾备环境在内的五套线上环境，使用 Terraform 管理超过一百台虚拟机和其它 Azure 云服务，期间在四个月内完成全部环境的 Azure 跨区域迁移和灾备环境的搭建；
-			\item 基于微服务架构，先后使用 Rancher 和 Kubernetes 作为容器编排平台，期间在三个月内，完成包括生产环境在内的四套环境，从 Rancher 到 Kubernetes 的迁移；
-			\item 使用 GoCD，通过 \textit{Pipeline as Code} 方式和 Kubernetes \textit{Elastic Agent} 管理超过 120 条持续交付流水线；
-			\item 先后使用 Ansible 和 Saltstack 管理线上环境配置，保证五套线上环境的一致性和快速变更；
-			\item 基于 Prometheus 搭建监控系统，实现对基础设施、微服务和集成服务进行全面监控；
-			\item 使用 Elasticsearch 集群处理和存储约 30GB/天的应用服务日志，用于提供日志诊断、数据分析。
+			\item 在百人开发团队中负责 DevOps 团队，提供 DevOps 和 SRE 支持，参与架构设计、基础设施搭建和变更、持续交付、上线发布、环境运维、日志监控等工作；
+			\item 在 Azure 平台上管理包括生产、灾备环境在内的5套线上环境，用来支持团队开发、集成系统测试、用户培训和约600家4S店的销售、售后服务，期间在4个月内完成全部 Azure 资源的跨区域迁移和灾备环境的搭建；
+			\item 使用 Terraform 创建和管理超过一百台虚拟机和其它 Azure 云服务，并帮助客户在公司 IT 部门内推广 Terraform 实践；
+			\item 基于微服务架构，先后使用 Rancher 和 Kubernetes 作为容器编排平台，期间在3个月内，完成包括生产环境在内的4套线上环境，从 Rancher 到 Kubernetes 的迁移；
+			\item 使用 GoCD，通过 \textit{Pipeline as Code} 方式和 \textit{Kubernetes Elastic Agent} 管理超过 120 条持续交付流水线；
+			\item 先后使用 Ansible 和 Saltstack 管理线上环境的配置，实现5套线上环境的一致性和快速变更；
+			\item 完成监控系统从 Nagios 到 Prometheus 的迁移，并通过 Prometheus 实现对基础设施、微服务和集成服务进行全面监控；
+			\item 使用 Filebeat 和 Fluentbit 收集、Elasticsearch 集群处理和存储约 30GB/天的应用服务日志，用于日志诊断、数据分析。
 		\end{itemize}
 	\end{itemize}
 \end{body}
 
+\smallskip
 \begin{body}
 	\company{乐视致新}{北京}
 	{2016年7月 --- 2017年7月}
@@ -73,6 +90,7 @@
 	\end{itemize}
 \end{body}
 
+\smallskip
 \begin{body}
 	\company{BitSight}{剑桥，美国}
 	{2015年1月 --- 8月}
@@ -86,6 +104,7 @@
 	\end{itemize}
 \end{body}
 
+\smallskip
 \begin{body}
 	\company{Locately}{波士顿，美国}
 	{2014年7月 --- 8月}
